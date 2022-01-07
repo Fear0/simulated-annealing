@@ -14,9 +14,12 @@ SA algorithm also reaches the optimal or a close to optimal solution in consider
 ## RUN
 
 ### UNIX
-clone the repo and compile: \\
+clone the repo and compile: 
+
 git clone ...
+
 make
+
 ./floorplanning
 
 ### Windows
