@@ -7,6 +7,7 @@
 #include <map>
 #include <memory>
 
+//std::vector<int> modificationsHolder;
 /**
  * @brief An Op determins what kind of cut an inner Node represents.
  */
@@ -36,6 +37,7 @@ public:
     Node* right;
     Cell  cell;
     Op op;
+
 };
 
 /**
@@ -45,28 +47,35 @@ class Floor
 {
 private:
     Node* root = nullptr;
-    std::vector<std::unique_ptr<Node>> cellNodes;
-    std::vector<std::unique_ptr<Node>> innerNodes;
     void setRoot(Node* root);
+    void shiftLeft(Node *node);
+    void shiftRight(Node* node);
     void addCells(Coordinates coordinates, Node* node);
-    void shiftRight(Node *node);
-    //void shiftLeft(Node *node);
-    void swapOperator(Node* node);
+    //void swapOperator(Node* node);
     std::tuple<size_t,size_t> calcHorizontalSize(Node* node);
     std::tuple<size_t,size_t> calcVerticalSize(Node* node);
 public:
+    std::vector<std::shared_ptr<Node>> cellNodes;
+    std::vector<std::shared_ptr<Node>> innerNodes;
     Floor(const std::vector<Cell>& cells);
+    Floor():root(nullptr){};
     std::vector<std::vector<std::string>> plan;
-    Node* getRoot(){return this->root;};
-    void shiftLeft(Node *node);
+    Node* getRoot()  {return this->root;};
     void pack();
     void modify();
+    void reverse();
     void optimize(size_t t);
+    std::tuple<std::vector<std::vector<std::string>>,size_t> siumaltedAnnealing();
     size_t calcArea (const std::vector <std::vector<std::string>>& plan);
     std::tuple<size_t,size_t> calcSize(Node* node);
     void printPostOrder(Node *node);
+    double initialTemperatue();
+    void printFloor(const std::vector<std::vector<std::string>>& floor);
+    void postOrderString(Node* node,std::string& s);
+
 };
 
 std::ostream& operator<< (std::ostream& os, const Floor&);
+
 #endif //FLOORPLANNING_FLOOR_H
 
