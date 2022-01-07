@@ -16,18 +16,18 @@ SA algorithm also reaches the optimal or a close to optimal solution in consider
 ### UNIX
 clone the repo and compile: 
 
-git clone https://github.com/Fear0/simulated-annealing.git sa
+1. git clone https://github.com/Fear0/simulated-annealing.git sa
 
-cd sa
+2. cd sa
 
-make
+3. make
 
-./floorplanning
+4. ./floorplanning
 
 ### Windows
 
-clone the repo as above. 
+1. clone the repo as above. 
 
-Install and run visual studio, load the solution file "simulated-annealing.sln" then run.
+2. Install and run visual studio, load the solution file "simulated-annealing.sln" then run.
 
 
