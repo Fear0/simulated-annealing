@@ -1,4 +1,4 @@
-# simulated-annealing
+# Simulated Annealing
 Using simulated annealing (SA) to optimize the arrangement of cells in floorplanning.
 
 Simulated annealing is used for various optimization problems. A possible solution corresponds to the body in the algorithm, the oscillation of the molecules is realized by disturbances or CHANGES in the current solution to a new one.
