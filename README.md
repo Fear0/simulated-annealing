@@ -10,6 +10,8 @@ The procedure is used in various "Electronic Desing Automation" areas. It is eas
 
 A monotonic optimizer modifies the floorplan ramndomly t times and eventually reaches the optimal or a close to optimal solution.
 SA algorithm also reaches the optimal or a close to optimal solution in considerably less computation time even though it is a computing time intensive algorithm.
+The parameterization is heavily influenced by the paper entitled "An Efficient Simulated Annealing Based VLSI Floorplanning Algorithm for Slicing
+Structure".
 
 ## RUN
 
