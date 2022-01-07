@@ -13,6 +13,8 @@ SA algorithm also reaches the optimal or a close to optimal solution in consider
 The parameterization is heavily influenced by the paper entitled "An Efficient Simulated Annealing Based VLSI Floorplanning Algorithm for Slicing
 Structure".
 
+This is an extension of a programming assignment at the Leibniz University of Hanover.
+
 ## RUN
 
 ### UNIX
