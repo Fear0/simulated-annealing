@@ -16,7 +16,9 @@ SA algorithm also reaches the optimal or a close to optimal solution in consider
 ### UNIX
 clone the repo and compile: 
 
-git clone ...
+git clone https://github.com/Fear0/simulated-annealing.git sa
+
+cd sa
 
 make
 
