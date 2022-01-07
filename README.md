@@ -26,6 +26,8 @@ make
 
 ### Windows
 
-install visual studio, open it, load the solution file "simulated-annealing.sln" then run.
+clone the repo as above. 
+
+Install and run visual studio, load the solution file "simulated-annealing.sln" then run.
 
 
